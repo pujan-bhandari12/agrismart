@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@8.2.0/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>AgriSmart</span>
+        </span>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#irrigation">Irrigation</a></li>
+            <li><a href="#crops">Crop Management</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+        <div class="hero-content">
+                <div class="hero-subtitle">Welcome to AgriTech Solutions</div>
+                <h1 class="hero-title">Transform Your Farming with Smart Technology</h1>
+                <p class="hero-description">Get real-time weather insights, crop management tools, and smart irrigation solutions all in one place.</p>
+                <div class="cta-buttons">
+                    <button class="cta-button primary-cta">Get Started</button>
+                    <button class="cta-button secondary-cta">Contact Us</button>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Discover how our smart farming solutions can help you achieve better yields</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3 class="feature-title">Real-time Weather Monitoring</h3>
+                    <p class="feature-description">Get accurate weather forecasts and alerts tailored to your farm's location.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Crop Management</h3>
+                    <p class="feature-description">Track crop health, growth stages, and get personalized recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="feature-title">Automated Irrigation</h3>
+                    <p class="feature-description">Save water and optimize irrigation with smart scheduling and monitoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Farmers Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Acres Monitored</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-label">Water Saved (%)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get started with our platform in three simple steps</p>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Sign Up</h3>
+                    <p class="step-description">Create your account and set up your farm profile with basic information.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Configure</h3>
+                    <p class="step-description">Set up your weather preferences and irrigation zones for monitoring.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Monitor & Control</h3>
+                    <p class="step-description">Start monitoring your farm and control irrigation from anywhere.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2 class="section-title">What Our Users Say</h2>
+            <p class="section-subtitle">Hear from farmers who have transformed their operations with our platform</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"The weather monitoring system has helped me make better decisions for my farm. The accuracy is impressive!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/farmer1.jpg" alt="Farmer John">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p>Wheat Farmer, Kansas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Smart irrigation has reduced our water usage by 40% while maintaining crop yields. It's a game-changer!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/farmer2.jpg" alt="Farmer Sarah">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Vineyard Owner, California</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"The crop management tools have helped us optimize our planting and harvesting schedules significantly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/farmer3.jpg" alt="Farmer Mike">
+                        </div>
+                        <div class="author-info">
+                            <h4>Mike Anderson</h4>
+                            <p>Corn Farmer, Iowa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest farming tips and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>AgriSmart</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering farmers with smart technology solutions for better crop management, weather monitoring, and sustainable agriculture practices.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#weather">Weather Forecast</a></li>
+                        <li><a href="#irrigation">Smart Irrigation</a></li>
+                        <li><a href="#crops">Crop Management</a></li>
+                        <li><a href="#store">Agriculture Store</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Weather Monitoring</a></li>
+                        <li><a href="#">Crop Analysis</a></li>
+                        <li><a href="#">Smart Irrigation</a></li>
+                        <li><a href="#">Soil Testing</a></li>
+                        <li><a href="#">Farm Equipment</a></li>
+                        <li><a href="#">Expert Consultation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            123 Agriculture Street, Farmland, FL 12345
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@agrismart.com
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            Mon - Fri: 9:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 AgriSmart. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </footer>
+    </section>
+
+    <section id="weather" class="weather-section">
+        <h2>Weather Forecast</h2>
+        <div class="weather-search">
+            <div class="search-container">
+                <input type="text" id="city-search" placeholder="Search city...">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="current-location-btn" title="Use current location">
+                    <i class="fas fa-location-crosshairs"></i>
+                </button>
+            </div>
+            <div class="recent-searches">
+                <h4>Recent Searches</h4>
+                <div class="recent-cities"></div>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="current-weather">
+                <div class="weather-info">
+                    <h3>Current Weather</h3>
+                    <div id="weather-data">
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Loading weather data...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-details-container">
+                <div class="weather-metrics"></div>
+                <div class="weather-alerts"></div>
+                <div class="air-quality-container"></div>
+            </div>
+        </div>
+        <div class="forecast-container">
+            <h3>5-Day Forecast</h3>
+            <div id="forecast-data" class="forecast-cards">
+                <!-- Weather forecast will be populated by JavaScript -->
+            </div>
+        </div>
+        <div class="weather-map-container">
+            <h3>Weather Map</h3>
+            <div id="weather-map"></div>
+        </div>
+    </section>
+
+    <section id="crops" class="crop-section">
+        <h2>Crop Management</h2>
+        <div class="crop-container">
+            <div class="crop-calendar">
+                <h3>Crop Calendar</h3>
+                <div class="calendar-widget">
+                    <!-- Calendar will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="crop-recommendations">
+                <h3>Recommendations</h3>
+                <div class="recommendation-cards">
+                    <!-- Recommendations will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="irrigation" class="irrigation-section">
+        <h2>Smart Irrigation</h2>
+        <div class="irrigation-container">
+            <div class="irrigation-dashboard">
+                <div class="dashboard-card status-overview">
+                    <h3><i class="fas fa-tachometer-alt"></i> System Overview</h3>
+                    <div class="status-cards">
+                        <div class="status-card">
+                            <h4><i class="fas fa-tint"></i> Soil Moisture</h4>
+                            <div id="moisture-level">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card system-controls">
+                    <h3><i class="fas fa-sliders-h"></i> System Controls</h3>
+                    <div class="control-panel">
+                        <div class="main-controls">
+                            <div class="control-group">
+                                <button id="irrigation-toggle" class="control-btn primary">
+                                    <i class="fas fa-power-off"></i>
+                                    <span>Start Irrigation</span>
+                                </button>
+                                <button id="emergency-stop" class="control-btn danger">
+                                    <i class="fas fa-stop-circle"></i>
+                                    <span>Emergency Stop</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card zone-controls">
+                    <h3><i class="fas fa-map-marker-alt"></i> Zone Controls</h3>
+                    <div class="zone-grid">
+                        <div class="zone-card">
+                            <div class="zone-header">
+                                <span class="zone-name">Zone 1</span>
+                                <span class="zone-status">Inactive</span>
+                            </div>
+                            <div class="moisture-indicator">
+                                <div class="moisture-value">45%</div>
+                                <div class="moisture-label">Soil Moisture</div>
+                                <div class="moisture-bar">
+                                    <div class="moisture-fill" style="width: 45%; background-color: #2ecc71;"></div>
+                                </div>
+                            </div>
+                            <div class="zone-actions">
+                                <button class="zone-btn start">Start Zone</button>
+                                <button class="zone-btn stop">Stop Zone</button>
+                            </div>
+                        </div>
+                        <div class="zone-card">
+                            <div class="zone-header">
+                                <span class="zone-name">Zone 2</span>
+                                <span class="zone-status active">Active</span>
+                            </div>
+                            <div class="moisture-indicator">
+                                <div class="moisture-value">65%</div>
+                                <div class="moisture-label">Soil Moisture</div>
+                                <div class="moisture-bar">
+                                    <div class="moisture-fill" style="width: 65%; background-color: #2ecc71;"></div>
+                                </div>
+                            </div>
+                            <div class="zone-actions">
+                                <button class="zone-btn start">Start Zone</button>
+                                <button class="zone-btn stop">Stop Zone</button>
+                            </div>
+                        </div>
+                        <div class="zone-card">
+                            <div class="zone-header">
+                                <span class="zone-name">Zone 3</span>
+                                <span class="zone-status">Inactive</span>
+                            </div>
+                            <div class="moisture-indicator">
+                                <div class="moisture-value">30%</div>
+                                <div class="moisture-label">Soil Moisture</div>
+                                <div class="moisture-bar">
+                                    <div class="moisture-fill" style="width: 30%; background-color: #e74c3c;"></div>
+                                </div>
+                            </div>
+                            <div class="zone-actions">
+                                <button class="zone-btn start">Start Zone</button>
+                                <button class="zone-btn stop">Stop Zone</button>
+                            </div>
+                        </div>
+                        <div class="zone-card">
+                            <div class="zone-header">
+                                <span class="zone-name">Zone 4</span>
+                                <span class="zone-status">Inactive</span>
+                            </div>
+                            <div class="moisture-indicator">
+                                <div class="moisture-value">55%</div>
+                                <div class="moisture-label">Soil Moisture</div>
+                                <div class="moisture-bar">
+                                    <div class="moisture-fill" style="width: 55%; background-color: #2ecc71;"></div>
+                                </div>
+                            </div>
+                            <div class="zone-actions">
+                                <button class="zone-btn start">Start Zone</button>
+                                <button class="zone-btn stop">Stop Zone</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card smart-automation">
+                    <h3><i class="fas fa-robot"></i> Smart Automation</h3>
+                    <div class="automation-options">
+                        <div class="automation-card">
+                            <div class="automation-header">
+                                <i class="fas fa-cloud-rain"></i>
+                                <span class="automation-title">Weather-Based Control</span>
+                            </div>
+                            <p class="automation-description">Automatically adjust irrigation based on weather forecasts</p>
+                            <label class="automation-toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="automation-card">
+                            <div class="automation-header">
+                                <i class="fas fa-tint"></i>
+                                <span class="automation-title">Moisture-Based Control</span>
+                            </div>
+                            <p class="automation-description">Control irrigation based on soil moisture levels</p>
+                            <label class="automation-toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="automation-card">
+                            <div class="automation-header">
+                                <i class="fas fa-clock"></i>
+                                <span class="automation-title">Smart Scheduling</span>
+                            </div>
+                            <p class="automation-description">Optimize watering times based on historical data</p>
+                            <label class="automation-toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="store" class="store-section">
+        <h2>Agriculture Store</h2>
+        <div class="store-container">
+            <div class="store-sidebar">
+                <div class="search-box">
+                    <input type="text" id="product-search" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="filter-section">
+                    <h3><i class="fas fa-filter"></i> Filters</h3>
+                    <div class="category-filter">
+                        <h4>Categories</h4>
+                        <ul class="category-list">
+                            <li data-category="all" class="active">All Products</li>
+                            <li data-category="seeds">Seeds & Plants</li>
+                            <li data-category="tools">Tools & Equipment</li>
+                            <li data-category="fertilizers">Fertilizers</li>
+                            <li data-category="irrigation">Irrigation Systems</li>
+                            <li data-category="protection">Plant Protection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="price-filter">
+                        <h4>Price Range</h4>
+                        <div class="price-slider">
+                            <input type="range" id="price-range" min="0" max="500" value="500">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span id="price-value">$500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sort-filter">
+                        <h4>Sort By</h4>
+                        <select id="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store-main">
+                <div class="store-header">
+                    <div class="results-info">
+                        Showing <span id="product-count">0</span> products
+                    </div>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="products-container" class="products-grid">
+                    <!-- Products will be populated by JavaScript -->
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn" id="prev-page" disabled>
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="page-numbers" id="page-numbers">
+                        <!-- Page numbers will be populated by JavaScript -->
+                    </div>
+                    <button class="page-btn" id="next-page">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart Sidebar -->
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+                <button class="close-cart">×</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            <div class="cart-summary">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-amount">$0.00</span>
+                </div>
+                <div class="shipping">
+                    <span>Shipping:</span>
+                    <span class="shipping-amount">$0.00</span>
+                </div>
+                <div class="total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-lock"></i> Checkout Securely
+                </button>
+            </div>
+        </div>
+
+        <!-- Cart Toggle Button -->
+        <button class="cart-toggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>123 Agriculture Street, Farmland, FL 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@agrismart.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/ol@8.2.0/dist/ol.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Ensure OpenLayers is loaded before initializing
+        window.addEventListener('load', function() {
+            console.log('Window loaded');
+            if (typeof ol === 'undefined') {
+                console.error('OpenLayers failed to load');
+            } else {
+                console.log('OpenLayers available:', true);
+            }
+        });
+    </script>
+</body>
+</html> 
